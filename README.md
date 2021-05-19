@@ -1,11 +1,11 @@
 # RubyAppT1CA
 
-## Source Control Link ##
+## Source Control Link (R4) ##
 --- 
 
 [Github Repository](https://github.com/Ausiarm/RubyAppT1CA)
 
-## Software Development Plan ## 
+## Software Development Plan (R5) ## 
 ---
 
 - #### What does it do? #### 
@@ -20,7 +20,7 @@
 - #### How will it be used by audience #### 
     - The goal for anyone using this app is that it should be a quick hit of information followed by a way of cementing that information in the form of a quiz to test a user's retention. I wouldn't want anyone to fear use of this app and for this reason I am to make it something that one would only have to dedicate about 5 minutes of their time to. It should read more like a tweet on twitter and less like a paragraph in a book. One would use this in a situation where they perhaps wanted a break from work that wasn't mind numbing like watching tv. 
 
-## List of Features ##
+## List of Features (R6) ##
 --- 
 
 <ol>
@@ -29,3 +29,28 @@
     <li>Quiz</li> The quiz will be a randomly generated set of 5 true or false questions from an array of key value pairs. User's will have to answer correctly before advancing to the next question in the set. 
 </ol>
 
+## User Interaction Outline (R7) ## 
+---
+
+- how the user will find out how to interact with / use each feature
+    - Upon entry to the welcome page the user will be informed about navigation of the app. This introduction will prompt the user to answer a yes or no question and in doing so they will utilize the only methods of interaction necessary to access the full suite of features within the application. 
+- how the user will interact with / use each feature
+    - User interaction is to be handled solely by use of the arrow keys as well as the enter key. The user will not be prompted to enter a name as it will not be necessary for the functioning of the application. 
+- how errors will be handled by the application and displayed to the user
+    - In the case of an error, say JSON failing to return the stored data, the user will be prompted with a printed unable to access data message. 
+
+## Control Flow Diagram (R8) ##
+---
+
+![Control flow diagram](philo-quiz.png)
+
+## Implementation plan (R9) ##
+---
+
+[Trello Planning Board: Ruby Terminal App](https://trello.com/b/04Sm6RTq/philosophizethis)
+![TrelloBoard](ImplementationPlan.png)
+
+## Help Documentation (R10) ##
+---
+
+- to be completed once done with app with full knowledge of how to run and install it

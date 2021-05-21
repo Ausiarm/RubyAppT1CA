@@ -1,12 +1,13 @@
 require('colorize')
 require('tty-prompt')
 require('artii')
+require_relative 'choose_path.rb'
 
 
 def asciify_it(input)
     require ('artii')
     a = Artii::Base.new :font => 'slant'
-    a.asciify(input)#.magenta.on_blue
+    a.asciify(input)
 end
 
 puts asciify_it("Welcome").magenta.on_blue
@@ -22,7 +23,7 @@ yes_no = prompt.yes?("So #{name}, are you a lover of wisdom? ")
 
 if yes_no == true
     puts asciify_it("Let us learn!").magenta.on_blue
-    require_relative 'timelines.rb'
+    choose
 else 
     puts "Some have said that knowledge is a burden if it robs you of joy. Come back if you ever decide that your stance on wisdom is in need of a change"
 end

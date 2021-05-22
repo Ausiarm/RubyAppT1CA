@@ -4,13 +4,12 @@ require('artii')
 require_relative 'choose_path.rb'
 
 
-def asciify_it(input)
-    require ('artii')
+def asciify_slant(input)
     a = Artii::Base.new :font => 'slant'
     a.asciify(input)
 end
 
-puts asciify_it("Welcome").magenta.on_blue
+puts asciify_slant("Welcome").magenta.on_blue
 
 prompt = TTY::Prompt.new
 

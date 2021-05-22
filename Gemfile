@@ -14,4 +14,4 @@ gem "artii", "~> 2.1"
 
 gem "tty", "~> 0.5.0"
 
-gem "multi_json", "~> 1.15"
+gem "json", "~> 2.5"

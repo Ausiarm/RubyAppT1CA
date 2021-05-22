@@ -1,0 +1,45 @@
+{
+    "Quiz_questions" : [
+        {
+            "question": "Best known for his Meditations on Stoic philosophy. Marcus Aurelius has symbolized for many generations in the West the Golden Age of the Roman Empire.",
+            "answer": true
+        },
+        {
+            "question": "Jenny has symbolized for many generations in the West the Golden Age of the Roman Empire.",
+            "answer": false
+        },
+        {
+            "question": "Mary Walstonecroft was an english writer and passionate advocate of educational and social equality for women.",
+            "answer": true
+        },
+        {
+            "question": "Thomas Aquinas was an italian Dominican theologian, the foremost medieval Scholastic.",
+            "answer": true
+        },
+        {
+            "question": "Confucius was a french writer and feminist, a member of the intellectual fellowship of philosopher-writers.",
+            "answer": false
+        },
+        {
+            "question": "Thomas Hobbes is best known for his Meditations on Stoic philosophy.",
+            "answer": false
+        },
+        {
+            "question": "Friedrich Nietzsche was a German classical scholar and philosopher.",
+            "answer": true
+        },
+        {
+            "question": "Simone de Beauvoir was an english philosopher, scientist, and historian, best known for his political philosophy, especially as articulated in his masterpiece Leviathan (1651).",
+            "answer": false
+        },
+        {
+            "question": "Thomas Hobbes was an english philosopher, scientist, and historian, best known for his political philosophy, especially as articulated in his masterpiece Leviathan (1651).",
+            "answer": true
+        },
+        {
+            "question": "Friedrich Nietzsche was a feminist and a philosopher.",
+            "answer": false
+        }
+
+    ]
+}

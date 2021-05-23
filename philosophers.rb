@@ -1,6 +1,6 @@
 require('tty-prompt')
 require 'json'
-require('./choose_path')
+require './choose_path'
 
 file = File.read('./timeline.json')
 
@@ -55,7 +55,7 @@ def choose_philosopher
         puts "#{$philosophers['timeline'][9]['Known for']}"
         next_choice
     when "Go back"
-        # require_relative 'choose_path.rb'
+        require_relative 'choose_path.rb'
         choose
     end
     

@@ -2,7 +2,7 @@ require('colorize')
 require('tty-prompt')
 require('artii')
 require('json')
-require('./choose_path') 
+# require_relative './choose_path'
 
 
 def asciify_banner(input)

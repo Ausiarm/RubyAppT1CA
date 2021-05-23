@@ -1,7 +1,7 @@
 require('colorize')
 require('tty-prompt')
 require('artii')
-#require('./choose_path') 
+require_relative('./choose_path')
 
 def asciify_slant(input)
     a = Artii::Base.new :font => 'slant'

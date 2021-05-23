@@ -2,8 +2,8 @@ require('colorize')
 require('tty-prompt')
 require('artii')
 require('json')
-require('./choose_path') 
-require('./quiz')
+# require('./choose_path') 
+# require('./quiz')
 
 file = File.read('./timeline.json')
 
@@ -11,35 +11,35 @@ $philosophers = JSON.parse(file)["timeline"]
 
 $prompt = TTY::Prompt.new
 
+def timeline
 
+    puts "Welcome to the Timeline!"
+    puts "In this option we will go sequentially through each of our great philosophers according to when they showed up on the scene!"
 
-
-
-
-puts "Welcome to the Timeline!"
-puts "In this option we will go sequentially through each of our great philosophers according to when they showed up on the scene!"
-
-@start = $prompt.yes?("Ready to begin?")
-if @start == true
+    @start = $prompt.yes?("Ready to begin?")
+    if @start == true
         $philosophers.each do |item|
             puts item["Philosopher"]
             puts item["Time period"]
             puts item["Known for"]
             puts item["Famous saying"]
             $prompt.keypress("Press space or enter to continue", keys: [:space, :return]) 
-    end  
-else
+        end  
+    else
     return error
-end
+    end
 
-answer = $prompt.yes?("Now that you're all done, you can either go directly to the quiz or go home") do |q|
-    q.suffix "quiz/home"
+    answer = $prompt.yes?("Now that you're all done, you can either go directly to the quiz or go home") do |q|
+        q.suffix "quiz/home"
+    end 
+    if answer == "quiz"
+        take_quiz
+    elsif answer == "home"
+        choose
+    end
 end 
-if answer == "quiz"
-    take_quiz
-elsif answer == "home"
-    choose
-end
+
+timeline 
 
 # $philosophers["timeline"].each do |philosopher|
     

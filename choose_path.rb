@@ -1,4 +1,5 @@
 require('tty-prompt')
+require('./quiz')
 
 $prompt = TTY::Prompt.new
 
@@ -11,11 +12,11 @@ def choose
 
     case the_choice
     when "Timeline" 
-        require_relative 'timeline.rb'
+        #require_relative 'timeline.rb'
     when "Philosophers"
-        require_relative 'philosophers.rb'
+        #require_relative 'philosophers.rb'
     when "Quiz"
-        require_relative 'quiz.rb'
+        take_quiz
     end
 end
 

@@ -1,13 +1,18 @@
 require('tty-prompt')
-require_relative 'choose_path.rb'
+require 'json'
+require('./choose_path')
+
+file = File.read('./timeline.json')
+
+$philosophers = JSON.parse(file)
 
 $prompt = TTY::Prompt.new
 
 def next_choice
     go_back = $prompt.yes?("Return to philosopher list?")
-    puts go_back
     if go_back == false
         puts "We can't stay here forever!"
+        choose_philosopher
     else 
         puts "let's keep learning!"
         choose_philosopher
@@ -17,41 +22,41 @@ end
 #need to populate with information parsed from json, need to include at least two female philosophers
 
 def choose_philosopher
-    philosopher_choice = $prompt.select("Choose your Philosopher", %w(Aristotle Al-Haythem Descartes Hobbes Machiavelli Socrates Confuscious Nietszche Kant Aquinas Go\ back)) 
+    philosopher_choice = $prompt.select("Choose your Philosopher", %w(Aristotle Al-Haytham Aquinas Aurelius Beauvoir Confucius Descartes Hobbes Nietszche Wollstonecraft Go\ back)) 
     case philosopher_choice 
     when "Aristotle"
-        puts "greek boi"
-        next_choice
-    when "Al-Haythem"
-        puts "iraqi boi"
+        puts "#{$philosophers['timeline'][0]['Known for']}"
         next_choice
     when "Descartes"
-        puts "french boi"
+        puts "#{$philosophers['timeline'][1]['Known for']}"
+        next_choice
+    when "Confucius"
+        puts "#{$philosophers['timeline'][2]['Known for']}"
+        next_choice
+    when "Al-Haytham"
+        puts "#{$philosophers['timeline'][3]['Known for']}"
         next_choice
     when "Hobbes"
-        puts "english boi"
-        next_choice
-    when "Machiavelli"
-        puts "italian boi"
-        next_choice
-    when "Socrates"
-        puts "greek boi"
-        next_choice
-    when "Confuscious"
-        puts "china boi"
+        puts "#{$philosophers['timeline'][4]['Known for']}"
         next_choice
     when "Nietszche"
-        puts "german boi"
+        puts "#{$philosophers['timeline'][5]['Known for']}"
         next_choice
-    when "Kant"
-        puts "german boi"
+    when "Beauvoir"
+        puts "#{$philosophers['timeline'][6]['Known for']}"
         next_choice
     when "Aquinas"
-        puts "french boi"
+        puts "#{$philosophers['timeline'][7]['Known for']}"
+        next_choice
+    when "Aurelius"
+        puts "#{$philosophers['timeline'][8]['Known for']}"
+        next_choice
+    when "Wollstonecraft"
+        puts "#{$philosophers['timeline'][9]['Known for']}"
         next_choice
     when "Go back"
-        # instead of go back, implement a feature that will lead to the quiz from here.
-        @@the_choice
+        # require_relative 'choose_path.rb'
+        choose
     end
     
 end

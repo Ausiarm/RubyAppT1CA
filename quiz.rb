@@ -2,6 +2,8 @@ require('colorize')
 require('tty-prompt')
 require('artii')
 require('json')
+require('./choose_path') 
+
 
 def asciify_banner(input)
     a = Artii::Base.new :font => 'banner3'
@@ -44,31 +46,29 @@ def take_quiz
         end
     end 
 end
+
 def post_quiz
     if @user_score > 9
         puts "Way to go! You got #{@user_score}/12 correct. Looks like you've retained quite a bit of what you learned!"
     elsif @user_score < 8
         fail_answer = $prompt.yes?("You got #{@user_score}/12 correct. Perhaps you would like to try again?")
         if fail_answer == true
+            @user_score = 0
             take_quiz
             post_quiz
         else 
-            puts "Fair enough, perhaps you can come back another time to try again!"
+            answer_no = $prompt.yes?("Fair enough. Would you like to go home or exit?") do |q|
+            q.suffix "home/exit"
+        end 
+            if answer_no == "home"
+                # require_relative 'choose_path.rb'
+                choose
+            else
+                exit
+            end
         end
     end
 end
 
 take_quiz
 post_quiz
-
-
-#load one question at a time
-
-#question should be printed as a true or false
-
-#answering correctly should allow the user to advance and incorrectly should prompt them to answer the question again
-
-#the quiz should pull from an array of key value pairs at random
-
-#at the end of the quiz, the user should be congratulated and given the option to exit the app
-

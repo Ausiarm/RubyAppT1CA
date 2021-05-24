@@ -7,7 +7,7 @@ require('./quiz')
 
 file = File.read('./timeline.json')
 
-$philosophers = JSON.parse(file)["timeline"]
+$philosopher = JSON.parse(file)["timeline"]
 
 $prompt = TTY::Prompt.new
 
@@ -18,7 +18,7 @@ def timeline
 
     @start = $prompt.yes?("Ready to begin?")
     if @start == true
-        $philosophers.each do |item|
+        $philosopher.each do |item|
             p item["Philosopher"]
             puts ""
             p item["Time period"]

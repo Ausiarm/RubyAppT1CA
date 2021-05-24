@@ -6,9 +6,7 @@ require 'json'
 
 file = File.read('./timeline.json')
 
-$philosophers = JSON.parse(file)["timeline"]
-
-line 
+$philosophers = JSON.parse(file)
 
 def choose 
     $prompt = TTY::Prompt.new

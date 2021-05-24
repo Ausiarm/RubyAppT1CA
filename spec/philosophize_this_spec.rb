@@ -1,5 +1,5 @@
-require_relative '../quiz'
-require_relative '../choose_path'
+require_relative '../src/quiz'
+require_relative '../src/choose_path'
 
  describe 'take_quiz' do
      it 'it should run through an array of key value pairs in sequential order and print them off until the user gets to the end' do

@@ -8,6 +8,8 @@ file = File.read('./timeline.json')
 
 $philosophers = JSON.parse(file)["timeline"]
 
+line 
+
 def choose 
     $prompt = TTY::Prompt.new
 

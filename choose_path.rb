@@ -6,14 +6,8 @@ require 'json'
 
 file = File.read('./timeline.json')
 
-$philosophers = JSON.parse(file)
+$philosophers = JSON.parse(file)["timeline"]
 
-
-
-#present users with a list of three options that link to a new pager
-#option 1: timeline path
-#option 2: choose your philosopher
-#option 3: take philosophy quiz
 def choose 
     $prompt = TTY::Prompt.new
 

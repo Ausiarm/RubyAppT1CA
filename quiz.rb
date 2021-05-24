@@ -4,20 +4,16 @@ require('artii')
 require('json')
 require_relative './choose_path'
 
-
-
-
-
 def take_quiz
+
+    $prompt = TTY::Prompt.new
+
+    @user_score = 0
 
     def asciify_banner(input)
         a = Artii::Base.new :font => 'banner3'
         a.asciify(input)
     end
-
-    $prompt = TTY::Prompt.new
-
-    @user_score = 0
 
     @question_array = [
         {question:"Best known for his Meditations on Stoic philosophy. Marcus Aurelius has symbolized for many generations in the West the Golden Age of the Roman Empire.", value: true},
@@ -34,9 +30,9 @@ def take_quiz
         {question:"Aristotle was a mathematician and astronomer who made significant contributions to the principles of optics and the use of scientific experiments.", value: false}
     ]
 
-puts asciify_banner("Quiz Time!").magenta.on_blue.blink
+    puts asciify_banner("Quiz Time!").magenta.on_blue.blink
 
-puts "let's see if you remember what you learned about the people you've just read through."
+    puts "let's see if you remember what you learned about the people you've just read through."
 
     @question_array.each do |quiz|
         answer = $prompt.yes?("#{quiz[:question]}") do |q|
@@ -65,7 +61,7 @@ def post_quiz
         else
             exit
         end
-        puts 
+        #puts
     elsif @user_score < 8
         fail_answer = $prompt.yes?("You got #{@user_score}/12 correct. Perhaps you would like to try again?")
         if fail_answer == true

@@ -28,8 +28,7 @@ def timeline
             p item["Famous saying"]
             puts ""
             $prompt.keypress("Press space or enter to continue", keys: [:space, :return])
-            puts "___________________"
-            puts "" 
+            puts ""
         end  
     else
     return error

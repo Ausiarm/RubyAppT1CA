@@ -1,28 +1,34 @@
-require relative '../philosophize_quiz'
-require relative '../timeline'
-require relative '../choose_your_path'
-require relative '../welcome'
+require_relative '../quiz'
+#require_relative '../welcome'
+require('artii')
 
-describe PhilosophizeQuiz do
-    it 'Should ...' do 
-        # fill this information out as you go along
+# describe 'asciify_slant' do
+#     it 'it should take a string as an input and convert it to an artii styled format' do 
+#         expect(asciify_banner("Welcome")).to eq asciify_banner("Welcome")
+#     end
+# end
+
+ describe 'take_quiz' do
+     it 'it should run through an array of key value pairs in sequential order and print them off until the user gets to the end' do
+        expect(take_quiz).to eq [
+            {question:"Best known for his Meditations on Stoic philosophy. Marcus Aurelius has symbolized for many generations in the West the Golden Age of the Roman Empire.", value: true},
+            {question:"Jenny has symbolized for many generations in the West the Golden Age of the Roman Empire.", value: false},
+            {question:"Mary Walstonecroft was an english writer and passionate advocate of educational and social equality for women.", value: true},
+            {question:"Thomas Aquinas was an italian Dominican theologian, the foremost medieval Scholastic.", value: true},
+            {question:"Confucius was a french writer and feminist, a member of the intellectual fellowship of philosopher-writers.", value: false},
+            {question:"Thomas Hobbes is best known for his Meditations on Stoic philosophy.", value: false},
+            {question:"Friedrich Nietzsche was a German classical scholar and philosopher.", value: true},
+            {question:"Simone de Beauvoir was an english philosopher, scientist, and historian, best known for his political philosophy, especially as articulated in his masterpiece Leviathan (1651).", value: false},
+            {question:"Thomas Hobbes was an english philosopher, scientist, and historian, best known for his political philosophy, especially as articulated in his masterpiece Leviathan (1651).", value: true},
+            {question:"Friedrich Nietzsche was a feminist and a philosopher.", value: false},
+            {question:"Ibn Al-Haytham was a mathematician and astronomer who made significant contributions to the principles of optics and the use of scientific experiments.", value: true},
+            {question:"Aristotle was a mathematician and astronomer who made significant contributions to the principles of optics and the use of scientific experiments.", value: false}
+        ]
     end
 end
 
-describe WelcomeUser do
-    it 'should take username as an argument and present the welcome message along with the origin of the word philosophy' do
-        # fill this information out as you go along
-    end
-end
-
-describe Timeline do
-    it 'should present elements of an array in sequential order based off user clicking the up or down arrow keys' do
-        # fill this information out as you go along
-    end
-end
-
-describe ChooseYourPath do
-    it 'should present the user with a list of options that they can select from that will present relevant information' do
-        # fill this information out as you go along
+describe 'asciify_slant' do
+    it 'it should take a string as an input and convert it to an artii styled format' do 
+        expect(asciify_banner("Welcome")).to eq asciify_banner("Welcome")
     end
 end

@@ -4,6 +4,11 @@ require('artii')
 require('json')
 require_relative './choose_path'
 
+def asciify_banner(input)
+    a = Artii::Base.new :font => 'banner3'
+    a.asciify(input)
+end
+
 def take_quiz
 
     $prompt = TTY::Prompt.new

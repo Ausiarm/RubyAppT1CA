@@ -11,7 +11,7 @@
             "Philosopher":"René Descartes",
             "Time period": "16th - 17th Century",
             "url":"https://plato.stanford.edu/entries/descartes/",
-            "Known for":"He offered a new vision of the natural world that continues to shape our thought today: a world of matter possessing a few fundamental properties and interacting according to a few universal laws. This natural world included an immaterial mind that, in human beings, was directly related to the brain; in this way, Descartes formulated the modern version of the mind–body problem. In metaphysics, he provided arguments for the existence of God, to show that the essence of matter is extension, and that the essence of mind is thought. Descartes claimed early on to possess a special method, which was variously exhibited in mathematics, natural philosophy, and metaphysics, and which, in the latter part of his life, included, or was supplemented by, a method of doubt.",
+            "Known for":"He offered a new vision of the natural world that continues to shape our thought today: a world of matter possessing a few fundamental properties and interacting according to a few universal laws. This natural world included an immaterial mind that, in human beings, was directly related to the brain; in this way, Descartes formulated the modern version of the mind–body problem.",
             "Famous saying":"I think, therefore I am."
         },
         {
@@ -32,14 +32,14 @@
             "Philosopher":"Thomas Hobbes",
             "Time period": "16th - 17th Century",
             "url":"https://www.britannica.com/biography/Thomas-Hobbes",
-            "Known for":"English philosopher, scientist, and historian, best known for his political philosophy, especially as articulated in his masterpiece Leviathan (1651). Hobbes viewed government primarily as a device for ensuring collective security. Political authority is justified by a hypothetical social contract among the many that vests in a sovereign person or entity the responsibility for the safety and well-being of all. In metaphysics, Hobbes defended materialism, the view that only material things are real. His scientific writings present all observed phenomena as the effects of matter in motion.",
+            "Known for":"English philosopher, scientist, and historian, best known for his political philosophy, especially as articulated in his masterpiece Leviathan (1651). Hobbes viewed government primarily as a device for ensuring collective security. Political authority is justified by a hypothetical social contract among the many that vests in a sovereign person or entity the responsibility for the safety and well-being of all.",
             "Famous saying":"No arts; no letters; no society; and which is worst of all, continual fear and danger of violent death; and the life of man, solitary, poor, nasty, brutish, and short."
         },
         {
             "Philosopher":"Friedrich Nietzsche",
             "Time period": "19th Century",
             "url":"https://www.britannica.com/biography/Friedrich-Nietzsche",
-            "Known for":"German classical scholar, philosopher, and critic of culture, who became one of the most influential of all modern thinkers. His attempts to unmask the motives that underlie traditional Western religion, morality, and philosophy deeply affected generations of theologians, philosophers, psychologists, poets, novelists, and playwrights. He thought through the consequences of the triumph of the Enlightenment’s secularism, expressed in his observation that “God is dead,” in a way that determined the agenda for many of Europe’s most-celebrated intellectuals after his death.",
+            "Known for":"German classical scholar, philosopher, and critic of culture, who became one of the most influential of all modern thinkers. His attempts to unmask the motives that underlie traditional Western religion, morality, and philosophy deeply affected generations of theologians, philosophers, psychologists, poets, novelists, and playwrights.", 
             "Famous saying":"God is dead: but considering the state Man is in, there will perhaps be caves, for ages yet, in which his shadow will be shown"
         },
         {
@@ -53,7 +53,7 @@
             "Philosopher":"St. Thomas Aquinas",
             "Time period": "13th Century",
             "url":"https://www.britannica.com/biography/Saint-Thomas-Aquinas",
-            "Known for":"Italian Dominican theologian, the foremost medieval Scholastic. He developed his own conclusions from Aristotelian premises, notably in the metaphysics of personality, creation, and Providence. As a theologian, he was responsible in his two masterpieces, the Summa theologiae and the Summa contra gentiles, for the classical systematization of Latin theology, and, as a poet, he wrote some of the most gravely beautiful eucharistic hymns in the church’s liturgy. His doctrinal system and the explanations and developments made by his followers are known as Thomism. Although many modern Roman Catholic theologians do not find St. Thomas altogether congenial, he is nevertheless recognized by the Roman Catholic Church as its foremost Western philosopher and theologian.",
+            "Known for":"Italian Dominican theologian, the foremost medieval Scholastic. He developed his own conclusions from Aristotelian premises, notably in the metaphysics of personality, creation, and Providence. As a theologian, he was responsible in his two masterpieces, the Summa theologiae and the Summa contra gentiles, for the classical systematization of Latin theology, and, as a poet, he wrote some of the most gravely beautiful eucharistic hymns in the church’s liturgy.", 
             "Famous saying":"To one who has faith, no explanation is necessary. To one without faith, no explanation is possible."
         },
         {

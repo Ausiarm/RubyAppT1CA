@@ -2,19 +2,24 @@ require('colorize')
 require('tty-prompt')
 require('artii')
 require('json')
-# require_relative './choose_path'
+require_relative './choose_path'
 
 
-def asciify_banner(input)
-    a = Artii::Base.new :font => 'banner3'
-    a.asciify(input)
-end
 
-$prompt = TTY::Prompt.new
 
-@user_score = 0
 
-@question_array = [
+def take_quiz
+
+    def asciify_banner(input)
+        a = Artii::Base.new :font => 'banner3'
+        a.asciify(input)
+    end
+
+    $prompt = TTY::Prompt.new
+
+    @user_score = 0
+
+    @question_array = [
         {question:"Best known for his Meditations on Stoic philosophy. Marcus Aurelius has symbolized for many generations in the West the Golden Age of the Roman Empire.", value: true},
         {question:"Jenny has symbolized for many generations in the West the Golden Age of the Roman Empire.", value: false},
         {question:"Mary Walstonecroft was an english writer and passionate advocate of educational and social equality for women.", value: true},
@@ -33,23 +38,34 @@ puts asciify_banner("Quiz Time!").magenta.on_blue.blink
 
 puts "let's see if you remember what you learned about the people you've just read through."
 
-def take_quiz
     @question_array.each do |quiz|
         answer = $prompt.yes?("#{quiz[:question]}") do |q|
             q.suffix "true/false"
         end 
         if answer == quiz[:value]
+            puts ""
             puts "Correct!"
+            puts ""
             @user_score += 1
         else 
+            puts ""
             puts "Incorrect!"
+            puts ""
         end
     end 
 end
 
 def post_quiz
-    if @user_score > 9
-        puts "Way to go! You got #{@user_score}/12 correct. Looks like you've retained quite a bit of what you learned!"
+    if @user_score > 8
+        congratulations_message = $prompt.yes?("Way to go! You got #{@user_score}/12 correct. Looks like you've retained quite a bit of what you learned! Would you like to return home or exit") do |q|
+            q.suffix "home/exit"
+        end 
+        if congratulations_message == true
+            choose
+        else
+            exit
+        end
+        puts 
     elsif @user_score < 8
         fail_answer = $prompt.yes?("You got #{@user_score}/12 correct. Perhaps you would like to try again?")
         if fail_answer == true
@@ -60,8 +76,7 @@ def post_quiz
             answer_no = $prompt.yes?("Fair enough. Would you like to go home or exit?") do |q|
             q.suffix "home/exit"
         end 
-            if answer_no == "home"
-                # require_relative 'choose_path.rb'
+            if answer_no == true
                 choose
             else
                 exit
@@ -69,6 +84,3 @@ def post_quiz
         end
     end
 end
-
-take_quiz
-post_quiz

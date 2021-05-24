@@ -1,7 +1,12 @@
 require('tty-prompt')
-# require_relative './quiz'
-# require_relative './philosophers'
-# require_relative './timeline'
+require_relative './quiz'
+require_relative './philosophers'
+require_relative './timeline'
+require 'json'
+
+file = File.read('./timeline.json')
+
+$philosophers = JSON.parse(file)
 
 
 
@@ -16,12 +21,12 @@ def choose
 
     case the_choice
     when "Timeline" 
-        #Still need to figure this out
+        timeline
     when "Philosophers"
         choose_philosopher
+        next_choice
     when "Quiz"
         take_quiz
+        post_quiz
     end
 end
-
-choose

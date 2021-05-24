@@ -58,9 +58,4 @@ def choose_philosopher
         require_relative 'choose_path.rb'
         choose
     end
-    
 end
-
-
-
-choose_philosopher

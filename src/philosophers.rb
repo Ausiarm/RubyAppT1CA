@@ -9,7 +9,11 @@ $philosophers = JSON.parse(file)
 $prompt = TTY::Prompt.new
 
 def next_choice
-    go_back = $prompt.yes?("Return to philosopher list?")
+    go_back = $prompt.yes?("Return to philosopher list?") do |q|
+    q.suffix "yes/no"
+    q.validate(/yes|no/, "Please enter either yes or no")
+    q.modify :strip, :collapse
+    end
     if go_back == false
         puts "We can't stay here forever!"
         choose_philosopher
@@ -55,7 +59,6 @@ def choose_philosopher
         puts "#{$philosophers['timeline'][9]['Known for']}"
         next_choice
     when "Go back"
-        require_relative 'choose_path.rb'
         choose
     end
 end

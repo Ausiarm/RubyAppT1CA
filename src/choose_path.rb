@@ -11,7 +11,7 @@ $philosophers = JSON.parse(file)
 def choose 
     $prompt = TTY::Prompt.new
 
-    the_choice = $prompt.select("Pick a path or test your knowledge!", %w(Timeline Philosophers Quiz))
+    the_choice = $prompt.select("Pick a path or test your knowledge!", %w(Timeline Philosophers Quiz Exit))
 
     case the_choice
     when "Timeline" 
@@ -22,5 +22,7 @@ def choose
     when "Quiz"
         take_quiz
         post_quiz
+    when "Exit"
+        exit 
     end
 end

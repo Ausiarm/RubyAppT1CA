@@ -39,22 +39,30 @@ def take_quiz
 
     puts "let's see if you remember what you learned about the people you've just read through."
 
+    sleep 2
+
     @question_array.each do |quiz|
         sleep 1.5
         system "clear"
-        answer = $prompt.yes?("#{quiz[:question]}") do |q|
-            q.suffix "true/false"
+        begin
+            answer = $prompt.yes?("#{quiz[:question]}") do |q|
+                q.suffix "true/false"
+                q.validate(/true|false/, "Please enter either true or false")
+                q.modify :strip, :collapse
+            end 
+            if answer == quiz[:value]
+                puts ""
+                puts "Correct!"
+                puts ""
+                @user_score += 1
+            else 
+                puts ""
+                puts "Incorrect!"
+                puts ""
+            end
+        rescue
+            puts error
         end 
-        if answer == quiz[:value]
-            puts ""
-            puts "Correct!"
-            puts ""
-            @user_score += 1
-        else 
-            puts ""
-            puts "Incorrect!"
-            puts ""
-        end
     end 
 end
 
@@ -62,6 +70,8 @@ def post_quiz
     if @user_score > 8
         congratulations_message = $prompt.yes?("Way to go! You got #{@user_score}/12 correct. Looks like you've retained quite a bit of what you learned! Would you like to return home or exit") do |q|
             q.suffix "home/exit"
+            q.validate(/home|exit/, "Please enter either home or exit")
+            q.modify :strip, :collapse
         end 
         if congratulations_message == true
             choose
@@ -70,7 +80,11 @@ def post_quiz
         end
         puts
     elsif @user_score < 8
-        fail_answer = $prompt.yes?("You got #{@user_score}/12 correct. Perhaps you would like to try again?")
+        fail_answer = $prompt.yes?("You got #{@user_score}/12 correct. Perhaps you would like to try again?") do |q|
+            q.suffix "yes/no"
+            q.validate(/yes|no/, "Please enter either yes or no")
+            q.modify :strip, :collapse
+        end
         if fail_answer == true
             @user_score = 0
             take_quiz
@@ -78,7 +92,9 @@ def post_quiz
         else 
             answer_no = $prompt.yes?("Fair enough. Would you like to go home or exit?") do |q|
             q.suffix "home/exit"
-        end 
+            q.validate(/home|exit/, "Please enter either home or exit")
+            q.modify :strip, :collapse
+            end 
             if answer_no == true
                 choose
             else

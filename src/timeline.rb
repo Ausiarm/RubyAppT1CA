@@ -28,6 +28,7 @@ def timeline
             p item["Famous saying"]
             puts ""
             $prompt.keypress("Press space or enter to continue", keys: [:space, :return])
+            #consider trying to use clear to empty terminal on each space
             puts ""
         end  
     else

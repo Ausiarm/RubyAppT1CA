@@ -40,6 +40,8 @@ def take_quiz
     puts "let's see if you remember what you learned about the people you've just read through."
 
     @question_array.each do |quiz|
+        sleep 1.5
+        system "clear"
         answer = $prompt.yes?("#{quiz[:question]}") do |q|
             q.suffix "true/false"
         end 
@@ -66,7 +68,7 @@ def post_quiz
         else
             exit
         end
-        #puts
+        puts
     elsif @user_score < 8
         fail_answer = $prompt.yes?("You got #{@user_score}/12 correct. Perhaps you would like to try again?")
         if fail_answer == true

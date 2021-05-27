@@ -44,6 +44,7 @@ def take_quiz
     @question_array.each do |quiz|
         sleep 1.5
         system "clear"
+        
         begin
             answer = $prompt.yes?("#{quiz[:question]}") do |q|
                 q.suffix "true/false"
@@ -53,15 +54,13 @@ def take_quiz
             if answer == quiz[:value]
                 puts ""
                 puts "Correct!"
-                puts ""
                 @user_score += 1
             else 
                 puts ""
                 puts "Incorrect!"
-                puts ""
             end
         rescue
-            puts error
+            puts "there was an issue processing your response, please try again"
         end 
     end 
 end

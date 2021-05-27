@@ -23,8 +23,6 @@ def next_choice
     end
 end
 
-#need to populate with information parsed from json, need to include at least two female philosophers
-
 def choose_philosopher
     philosopher_choice = $prompt.select("Choose your Philosopher", %w(Aristotle Al-Haytham Aquinas Aurelius Beauvoir Confucius Descartes Hobbes Nietszche Wollstonecraft Go\ back)) 
     case philosopher_choice 

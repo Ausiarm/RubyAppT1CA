@@ -113,7 +113,7 @@
 
 <br>
 
-4. Once the three steps above have been completed, in terminal change directory (or cd) into the correct directory where you stored the app and then enter `{Armstrong Ashton-Lewis}_T1A3/src`. Once here enter chmod +rx ./run_app.sh which will turn the script file into an executable on your local repository/ and or confirm that it is executable. Then in the command line type `./run_app.sh` and hit enter, this will execute the script that will initate the application. 
+4. Once the three steps above have been completed please be sure to enlarge terminal size so that graphic effects will load in a more visually appealing manner. If you get a wall of jumbled text, this just means the screen needs to be made larger. In terminal change directory (or cd) into the correct directory where you stored the app and then enter `{Armstrong Ashton-Lewis}_T1A3/src`. Once here enter chmod +rx ./run_app.sh which will turn the script file into an executable on your local repository/ and or confirm that it is executable. Then in the command line type `./run_app.sh` and hit enter, this will execute the script that will initate the application. 
 
 5. Below is a picture of the directory if it were located on a user desktop and code necessary to run in order to execute the application.
     - ![Terminal_example](docs/images/user_example.png)

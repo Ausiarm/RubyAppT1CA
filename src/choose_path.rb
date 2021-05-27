@@ -5,13 +5,11 @@ require_relative './timeline'
 require 'json'
 
 file = File.read('./timeline.json')
-
 $philosophers = JSON.parse(file)
 
 def choose 
     $prompt = TTY::Prompt.new
-
-    the_choice = $prompt.select("Pick a path or test your knowledge!", %w(Timeline Philosophers Quiz Exit))
+    the_choice = $prompt.select("Pick a path or test your knowledge!".magenta.on_blue, %w(Timeline Philosophers Quiz Exit))
 
     case the_choice
     when "Timeline" 

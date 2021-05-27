@@ -3,7 +3,6 @@ require 'json'
 require './choose_path'
 
 file = File.read('./timeline.json')
-
 $philosophers = JSON.parse(file)
 
 $prompt = TTY::Prompt.new

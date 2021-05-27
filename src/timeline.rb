@@ -6,13 +6,11 @@ require('./choose_path')
 require('./quiz')
 
 file = File.read('./timeline.json')
-
 $philosopher = JSON.parse(file)["timeline"]
 
 $prompt = TTY::Prompt.new
 
 def timeline
-
     puts "Welcome to the Timeline!"
     puts "In this option we will go sequentially through each of our great philosophers according to when they showed up on the scene!"
 

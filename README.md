@@ -42,7 +42,7 @@
 ## Control Flow Diagram ##
 ---
 
-![Control Flow Diagram](src/images/philo-quiz.png)
+![Control Flow Diagram](resources/images/philo-quiz.png)
 
 ## Implementation plan ##
 ---
@@ -52,17 +52,17 @@
 <br>
 
 ### Beginning stages of planning ###
-![TrelloBoard](src/images/ImplementationPlan.png)
+![TrelloBoard](resources/images/ImplementationPlan.png)
 
 <br>
 
 ### In progress representation of tasks being completed and shifted ###
-![TrelloBoard](src/images/ImplementationPlan2.png)
+![TrelloBoard](resources/images/ImplementationPlan2.png)
 
 <br>
 
 ### Final pass of implementation plan, completing last steps before turn-in ###
-![TrelloBoard](src/images/ImplementationPlan3.png)
+![TrelloBoard](resources/images/ImplementationPlan3.png)
 
 
 ## Help Documentation ##
@@ -113,7 +113,7 @@
 
 <br>
 
-4. Once the three steps above have been completed, in terminal change directory (or cd) into the correct directory where you stored the app and then enter `RubyApp/src`. Once here enter chmod +rx ./run_app.sh which will turn the script file into an executable on your local repository/ and or confirm that it is executable. Then in the command line type `./run_app.sh` and hit enter, this will execute the script that will initate the application. 
+4. Once the three steps above have been completed, in terminal change directory (or cd) into the correct directory where you stored the app and then enter `{Armstrong Ashton-Lewis}_T1A3/src`. Once here enter chmod +rx ./run_app.sh which will turn the script file into an executable on your local repository/ and or confirm that it is executable. Then in the command line type `./run_app.sh` and hit enter, this will execute the script that will initate the application. 
 
 <br>
 

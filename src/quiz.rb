@@ -10,7 +10,6 @@ def asciify_banner(input)
 end
 
 def take_quiz
-
     $prompt = TTY::Prompt.new
 
     @user_score = 0
@@ -44,7 +43,7 @@ def take_quiz
     @question_array.each do |quiz|
         sleep 1.5
         system "clear"
-        
+
         begin
             answer = $prompt.yes?("#{quiz[:question]}") do |q|
                 q.suffix "true/false"

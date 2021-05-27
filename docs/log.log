@@ -1,0 +1,42 @@
+* 52e7544 : finished final code review. Ready for turn in.
+* 71028e8 : added second test case to tests and added a photo example of how to run app through script for users.
+* 402279b : renamed directory and prepared objects for turn in -- on final pass.
+* ab280db : Cleaned up code and did a pass to check for redundancies. Still need to implement another test and make sure begin rescue blocks are functioning correctly.
+* 3f9c0da : added user input validation in order to avoid having to throw unexpected errors when users failed to enter the expected input to advance.
+* 78364ee : added some clearing functionality. need to put error handlers in to take care of incorrect user input.
+* e2bc077 : moved positioning of spec folder to make more sense in relation to structure.
+*   d85456a : Merge pull request #5 from Ausiarm/folder_test
+|\  
+| * c53d000 : moved files into correct folders
+|/  
+* 31d0a91 : finished second test to check on functionality of the choose method.
+* d145675 : added first test along with directories for src and ppt.
+* f6032e9 : efinished testing for error, found issue relating to naming of  variable between two different pages, changed name slightly so that the variables were different. Good example of why naming conventions need to be followed and not named similarly.
+*   0cf60f1 : Merge branch 'main' into final_touches
+|\  
+| *   144d8c9 : Merge pull request #4 from Ausiarm/final_touches
+| |\  
+* | | 728187e : testing for changes
+* | | 12d9fa0 : fixed an issue with referencing JSON in choose path that was causing timeline.rb to terminate without proper functionality.
+| |/  
+|/|   
+* | 0d26217 : created the run_app.sh file and put in a script to start the app in the form of a bash script.
+|/  
+* 47b3ad3 : resolved issue with pages failing to interact (was calling methods in innappropriate places causing pages functionality to break down).
+* b15f34f : trying to get cross page functionality, not working right now
+* 8ac8e34 : finished all features of app, need to connect pages and make app flow run the way it is supposed to.
+*   15f98b2 : Merge pull request #3 from Ausiarm/mods
+|\  
+| * 30c5538 : finished quiz logic, have to tie up a few loose ends but mostly done with quiz.rb file
+* | 1e23c97 : Merge pull request #2 from Ausiarm/mods
+|\| 
+| * ee744e0 : added JSON files and began to build the final two features of the app, need to pull pages together so that the loops will work correctly.
+* | 16c0ea2 : Merge pull request #1 from Ausiarm/mods
+|\| 
+| * 8a898b7 : added multiple ruby files to cover functionality of differing pages for the user choice aspect of the application. still need to incoroporate JSON as well as quiz and timeline features.
+|/  
+* 3c8725e : added Welcome file and worked on fincoroprating gems into code
+* 2a4a4e2 : Completed most of the README and added two image files to be included in README
+* 59f55ea : Added to the README and included a pdf of the flow chart for user interaction with the app
+* 7016194 : added Gemfile as well as rspec for testing later on
+* 4468bbc : first commit

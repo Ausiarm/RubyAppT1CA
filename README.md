@@ -1,4 +1,4 @@
-# RubyAppT1CA
+# README
 
 ## Source Control Link ##
 --- 
@@ -42,7 +42,7 @@
 ## Control Flow Diagram ##
 ---
 
-![Control Flow Diagram](resources/images/philo-quiz.png)
+![Control Flow Diagram](docs/images/philo-quiz.png)
 
 ## Implementation plan ##
 ---
@@ -52,17 +52,17 @@
 <br>
 
 ### Beginning stages of planning ###
-![TrelloBoard](resources/images/ImplementationPlan.png)
+![TrelloBoard](docs/images/ImplementationPlan.png)
 
 <br>
 
 ### In progress representation of tasks being completed and shifted ###
-![TrelloBoard](resources/images/ImplementationPlan2.png)
+![TrelloBoard](docs/images/ImplementationPlan2.png)
 
 <br>
 
 ### Final pass of implementation plan, completing last steps before turn-in ###
-![TrelloBoard](resources/images/ImplementationPlan3.png)
+![TrelloBoard](docs/images/ImplementationPlan3.png)
 
 
 ## Help Documentation ##
@@ -115,8 +115,26 @@
 
 4. Once the three steps above have been completed, in terminal change directory (or cd) into the correct directory where you stored the app and then enter `{Armstrong Ashton-Lewis}_T1A3/src`. Once here enter chmod +rx ./run_app.sh which will turn the script file into an executable on your local repository/ and or confirm that it is executable. Then in the command line type `./run_app.sh` and hit enter, this will execute the script that will initate the application. 
 
+5. Below is a picture of the directory if it were located on a user desktop and code necessary to run in order to execute the application.
+    - ![Terminal_example](docs/images/user_example.png)
+
 <br>
 
  Hardware Requirements
 
 - This application was created and tested on a mac. It should work in a windows environment but unfortunately I have not had access to a non-mac computer in order to test this. There are no specifc hardware requirement necessary to run this application. 
+
+## References ##
+--- 
+
+### websites linked in README ###
+- Ruby installation guide
+    - https://www.ruby-lang.org/en/downloads/ 
+- Git Repository Cloning guide 
+    - https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository 
+- Philosopher information 
+    - https://www.britannica.com/ 
+- Philosopher information 
+    - https://plato.stanford.edu/ 
+- Philosopher information
+    - https://www.biography.com/ 

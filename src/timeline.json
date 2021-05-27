@@ -1,6 +1,13 @@
 {
     "timeline" : [
         {
+            "Philosopher":"Confucius",
+            "Time period": "6th - 5th Century (BC)",
+            "url":"https://www.biography.com/scholar/confucius",
+            "Known for":"Confucius, also known as Kong Qiu or K’ung Fu-tzu, was a Chinese philosopher, teacher and political figure. His teachings, preserved in the Analects, focused on creating ethical models of family and public interaction and setting educational standards. After his death, Confucius became the official imperial philosophy of China, which was extremely influential during the Han, Tang and Song dynasties.",
+            "Famous saying":"What you do not wish for yourself, do not do to others."
+        },
+        {
             "Philosopher":"Aristotle",
             "Time period": "4th Century (BC)",
             "url":"https://www.britannica.com/biography/Aristotle",
@@ -8,18 +15,11 @@
             "Famous saying":"He who is to be a good ruler must have first been ruled."
         },
         {
-            "Philosopher":"René Descartes",
-            "Time period": "16th - 17th Century",
-            "url":"https://plato.stanford.edu/entries/descartes/",
-            "Known for":"He offered a new vision of the natural world that continues to shape our thought today: a world of matter possessing a few fundamental properties and interacting according to a few universal laws. This natural world included an immaterial mind that, in human beings, was directly related to the brain; in this way, Descartes formulated the modern version of the mind–body problem.",
-            "Famous saying":"I think, therefore I am."
-        },
-        {
-            "Philosopher":"Confucius",
-            "Time period": "6th - 5th Century (BC)",
-            "url":"https://www.biography.com/scholar/confucius",
-            "Known for":"Confucius, also known as Kong Qiu or K’ung Fu-tzu, was a Chinese philosopher, teacher and political figure. His teachings, preserved in the Analects, focused on creating ethical models of family and public interaction and setting educational standards. After his death, Confucius became the official imperial philosophy of China, which was extremely influential during the Han, Tang and Song dynasties.",
-            "Famous saying":"What you do not wish for yourself, do not do to others."
+            "Philosopher":"Marcus Aurelius",
+            "Time period": "2nd Century",
+            "url":"https://www.britannica.com/biography/Marcus-Aurelius-Roman-emperor",
+            "Known for":"Best known for his Meditations on Stoic philosophy. Marcus Aurelius has symbolized for many generations in the West the Golden Age of the Roman Empire.",
+            "Famous saying":"Is any man afraid of change? Why what can take place without change? What then is more pleasing or more suitable to the universal nature?"
         },
         {
             "Philosopher":"Ibn Al-Haytham",
@@ -29,11 +29,32 @@
             "Famous saying":"The seeker after truth is not one who studies the writings of the ancients and, following his natural disposition, puts his trust in them, but rather the one who suspects his faith in them and questions what he gathers from them..."
         },
         {
+            "Philosopher":"St. Thomas Aquinas",
+            "Time period": "13th Century",
+            "url":"https://www.britannica.com/biography/Saint-Thomas-Aquinas",
+            "Known for":"Italian Dominican theologian, the foremost medieval Scholastic. He developed his own conclusions from Aristotelian premises, notably in the metaphysics of personality, creation, and Providence. As a theologian, he was responsible in his two masterpieces, the Summa theologiae and the Summa contra gentiles, for the classical systematization of Latin theology, and, as a poet, he wrote some of the most gravely beautiful eucharistic hymns in the church’s liturgy.", 
+            "Famous saying":"To one who has faith, no explanation is necessary. To one without faith, no explanation is possible."
+        },
+        {
+            "Philosopher":"René Descartes",
+            "Time period": "16th - 17th Century",
+            "url":"https://plato.stanford.edu/entries/descartes/",
+            "Known for":"He offered a new vision of the natural world that continues to shape our thought today: a world of matter possessing a few fundamental properties and interacting according to a few universal laws. This natural world included an immaterial mind that, in human beings, was directly related to the brain; in this way, Descartes formulated the modern version of the mind–body problem.",
+            "Famous saying":"I think, therefore I am."
+        },
+        {
             "Philosopher":"Thomas Hobbes",
             "Time period": "16th - 17th Century",
             "url":"https://www.britannica.com/biography/Thomas-Hobbes",
             "Known for":"English philosopher, scientist, and historian, best known for his political philosophy, especially as articulated in his masterpiece Leviathan (1651). Hobbes viewed government primarily as a device for ensuring collective security. Political authority is justified by a hypothetical social contract among the many that vests in a sovereign person or entity the responsibility for the safety and well-being of all.",
             "Famous saying":"No arts; no letters; no society; and which is worst of all, continual fear and danger of violent death; and the life of man, solitary, poor, nasty, brutish, and short."
+        },
+        {
+            "Philosopher":"Mary Wollstonecraft",
+            "Time period": "18th Century",
+            "url":"https://www.britannica.com/biography/Mary-Wollstonecraft",
+            "Known for":"English writer and passionate advocate of educational and social equality for women. She outlined her beliefs in A Vindication of the Rights of Woman (1792), considered a classic of feminism.",
+            "Famous saying":"No man chooses evil because it is evil; he only mistakes it for happiness, the good he seeks."
         },
         {
             "Philosopher":"Friedrich Nietzsche",
@@ -48,27 +69,6 @@
             "url":"https://www.britannica.com/biography/Simone-de-Beauvoir",
             "Known for":"French writer and feminist, a member of the intellectual fellowship of philosopher-writers who have given a literary transcription to the themes of existentialism. She is known primarily for her treatise Le Deuxième Sexe, 2 vol. (1949; The Second Sex), a scholarly and passionate plea for the abolition of what she called the myth of the eternal feminine.",
             "Famous saying":"Man is defined as a human being and woman as a female – whenever she behaves as a human being she is said to imitate the male."
-        },
-        {
-            "Philosopher":"St. Thomas Aquinas",
-            "Time period": "13th Century",
-            "url":"https://www.britannica.com/biography/Saint-Thomas-Aquinas",
-            "Known for":"Italian Dominican theologian, the foremost medieval Scholastic. He developed his own conclusions from Aristotelian premises, notably in the metaphysics of personality, creation, and Providence. As a theologian, he was responsible in his two masterpieces, the Summa theologiae and the Summa contra gentiles, for the classical systematization of Latin theology, and, as a poet, he wrote some of the most gravely beautiful eucharistic hymns in the church’s liturgy.", 
-            "Famous saying":"To one who has faith, no explanation is necessary. To one without faith, no explanation is possible."
-        },
-        {
-            "Philosopher":"Marcus Aurelius",
-            "Time period": "2nd Century",
-            "url":"https://www.britannica.com/biography/Marcus-Aurelius-Roman-emperor",
-            "Known for":"Best known for his Meditations on Stoic philosophy. Marcus Aurelius has symbolized for many generations in the West the Golden Age of the Roman Empire.",
-            "Famous saying":"Is any man afraid of change? Why what can take place without change? What then is more pleasing or more suitable to the universal nature?"
-        },
-        {
-            "Philosopher":"Mary Wollstonecraft",
-            "Time period": "18th Century",
-            "url":"https://www.britannica.com/biography/Mary-Wollstonecraft",
-            "Known for":"English writer and passionate advocate of educational and social equality for women. She outlined her beliefs in A Vindication of the Rights of Woman (1792), considered a classic of feminism.",
-            "Famous saying":"No man chooses evil because it is evil; he only mistakes it for happiness, the good he seeks."
         }
     ]
 }

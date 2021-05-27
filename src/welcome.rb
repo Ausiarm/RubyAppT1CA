@@ -27,8 +27,6 @@ system "clear"
 
 puts asciify_slant("Welcome, #{name}").magenta.on_blue
 puts ""
-# puts "You know, #{name}, Philosophy in the traditional greek means lover of wisdom.".blue.on_magenta
-# sleep 1
 
 yes_no = prompt.yes?("In the traditional greek, Philosophy means love of wisdom. Would you like to learn about some of the greatest lovers of wisdom in human history?".blue.on_magenta) do |q|
     q.suffix "yes/no"
@@ -46,4 +44,5 @@ else
     puts "Some have said that knowledge is a burden if it robs you of joy. Come back if you ever decide that your stance on wisdom is in need of a change"
 end
 rescue
+    puts "There was an error processing your response, please quit by entering clear into the command line and run the app again"
 end

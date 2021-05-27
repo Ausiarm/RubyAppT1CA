@@ -45,12 +45,12 @@ def take_quiz
         system "clear"
 
         begin
-            answer = $prompt.yes?("#{quiz[:question]}") do |q|
+            @answer = $prompt.yes?("#{quiz[:question]}") do |q|
                 q.suffix "true/false"
                 q.validate(/true|false/, "Please enter either true or false")
                 q.modify :strip, :collapse
             end 
-            if answer == quiz[:value]
+            if @answer == quiz[:value]
                 puts ""
                 puts "Correct!"
                 @user_score += 1
@@ -59,7 +59,7 @@ def take_quiz
                 puts "Incorrect!"
             end
         rescue
-            puts "there was an issue processing your response, please try again"
+            puts "there was an issue processing your response, please exit by entering clear into the command line and run the app again"
         end 
     end 
 end

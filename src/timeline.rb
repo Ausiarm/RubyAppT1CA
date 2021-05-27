@@ -32,8 +32,12 @@ def timeline
             $prompt.keypress("Press space or enter to continue", keys: [:space, :return])
             system "clear"
         end  
-    else
-    return error
+    elsif @start == false
+        system "clear"
+        puts "Someone is indecisive!"
+        sleep 1
+        system "clear"
+        choose
     end
 
     answer = $prompt.yes?("Now that you're all done, you can either go directly to the quiz or go home") do |q|
